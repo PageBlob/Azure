@@ -1,0 +1,6 @@
+     az vm stop --resource-group test-vm --name testvm
+    
+     az vm stop --resource-group test_vm --name testvm
+    
+    az vm list --resource-group test_vm
+    az vm list --resource-group test_vm  |grep  -i test
