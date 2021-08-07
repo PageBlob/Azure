@@ -1,0 +1,535 @@
+Requesting a Cloud Shell.Succeeded.
+Connecting terminal...
+
+Welcome to Azure Cloud Shell
+
+Type "az" to use Azure CLI
+Type "help" to learn about Cloud Shell
+
+abhishek@Azure:~$ az res
+reservations  resource      rest
+abhishek@Azure:~$ az res
+reservations  resource      rest
+abhishek@Azure:~$ az
+Display all 108 possibilities? (y or n)
+account              bot                  disk-encryption-set  iot                  openshift            sig
+acr                  cache                dla                  keyvault             --output             signalr
+acs                  cdn                  dls                  kusto                policy               snapshot
+ad                   cloud                dms                  lab                  postgres             sql
+advisor              cognitiveservices    eventgrid            local-context        ppg                  ssh
+afd                  config               eventhubs            lock                 provider             sshkey
+ai-examples          configure            extension            login                --query              staticwebapp
+aks                  consumption          feature              logout               redis                storage
+ams                  container            feedback             managedapp           relay                synapse
+apim                 cosmosdb             find                 managedservices      reservations         tag
+appconfig            databoxedge          functionapp          maps                 resource             term
+appservice           --debug              group                mariadb              rest                 ts
+aro                  demo                 -h                   monitor              role                 upgrade
+backup               deployment           hdinsight            mysql                search               --verbosebatch                deploymentmanager    --help               netappfiles          security             version
+batchai              deployment-scripts   identity             network              self-test            vm
+bicep                disk                 image                -o                   servicebus           vmss
+billing              disk-access          interactive          --only-show-errors   sf                   webapp
+abhishek@Azure:~$ az
+
+Welcome to Azure CLI!
+---------------------
+Use `az -h` to see available commands or go to https://aka.ms/cli.
+
+Telemetry
+---------
+The Azure CLI collects usage data in order to improve your experience.
+The data is anonymous and does not include commandline argument values.
+The data is collected by Microsoft.
+
+You can change your telemetry settings with `az configure`.
+
+
+     /\
+    /  \    _____   _ _  ___ _
+   / /\ \  |_  / | | | \'__/ _\
+  / ____ \  / /| |_| | | |  __/
+ /_/    \_\/___|\__,_|_|  \___|
+
+
+Welcome to the cool new Azure CLI!
+
+Use `az --version` to display the current version.
+Here are the base commands:
+
+    account             : Manage Azure subscription information.
+    acr                 : Manage private registries with Azure Container Registries.
+    ad                  : Manage Azure Active Directory Graph entities needed for Role Based Access
+                         Control.
+    advisor             : Manage Azure Advisor.
+    afd                 : Manage Azure Front Door.
+    ai-examples         : Add AI powered examples to help content.
+    aks                 : Manage Azure Kubernetes Services.
+    ams                 : Manage Azure Media Services resources.
+    apim                : Manage Azure API Management services.
+    appconfig           : Manage App Configurations.
+    appservice          : Manage App Service plans.
+    aro                 : Manage Azure Red Hat OpenShift clusters.
+    backup              : Manage Azure Backups.
+    batch               : Manage Azure Batch.
+    bicep               : Bicep CLI command group.
+    billing             : Manage Azure Billing.
+    bot                 : Manage Microsoft Azure Bot Service.
+    cache               : Commands to manage CLI objects cached using the `--defer` argument.
+    cdn                 : Manage Azure Content Delivery Networks (CDNs).
+    cloud               : Manage registered Azure clouds.
+    cognitiveservices   : Manage Azure Cognitive Services accounts.
+    config              : Manage Azure CLI configuration.
+    configure           : Manage Azure CLI configuration. This command is interactive.
+    consumption         : Manage consumption of Azure resources.
+    container           : Manage Azure Container Instances.
+    cosmosdb            : Manage Azure Cosmos DB database accounts.
+    databoxedge         : Support data box edge device and management.
+    deployment          : Manage Azure Resource Manager template deployment at subscription scope.
+    deployment-scripts  : Manage deployment scripts at subscription or resource group scope.
+    deploymentmanager   : Create and manage rollouts for your service.
+    disk                : Manage Azure Managed Disks.
+    disk-access         : Manage disk access resources.
+    disk-encryption-set : Disk Encryption Set resource.
+    dla                 : Manage Data Lake Analytics accounts, jobs, and catalogs.
+    dls                 : Manage Data Lake Store accounts and filesystems.
+    dms                 : Manage Azure Data Migration Service (DMS) instances.
+    eventgrid           : Manage Azure Event Grid topics, domains, domain topics, system topics
+                         partner topics, event subscriptions, system topic event subscriptions and
+                         partner topic event subscriptions.
+    eventhubs           : Manage Azure Event Hubs namespaces, eventhubs, consumergroups and geo
+                         recovery configurations - Alias.
+    extension           : Manage and update CLI extensions.
+    feature             : Manage resource provider features.
+    feedback            : Send feedback to the Azure CLI Team.
+    find                : I'm an AI robot, my advice is based on our Azure documentation as well as
+                         the usage patterns of Azure CLI and Azure ARM users. Using me improves
+                         Azure products and documentation.
+    functionapp         : Manage function apps. To install the Azure Functions Core tools see
+                         https://github.com/Azure/azure-functions-core-tools.
+    group               : Manage resource groups and template deployments.
+    hdinsight           : Manage HDInsight resources.
+    identity            : Managed Service Identities.
+    image               : Manage custom virtual machine images.
+    interactive         : Start interactive mode. Installs the Interactive extension if not
+                         installed already.
+    iot                 : Manage Internet of Things (IoT) assets.
+    keyvault            : Manage KeyVault keys, secrets, and certificates.
+    kusto               : Manage Azure Kusto resources.
+    lab                 : Manage Azure DevTest Labs.
+    local-context       : Manage Local Context.
+    lock                : Manage Azure locks.
+    login               : Log in to Azure.
+    logout              : Log out to remove access to Azure subscriptions.
+    managedapp          : Manage template solutions provided and maintained by Independent Software
+                         Vendors (ISVs).
+    managedservices     : Manage the registration assignments and definitions in Azure.
+    maps                : Manage Azure Maps.
+    mariadb             : Manage Azure Database for MariaDB servers.
+    monitor             : Manage the Azure Monitor Service.
+    mysql               : Manage Azure Database for MySQL servers.
+    netappfiles         : Manage Azure NetApp Files (ANF) Resources.
+    network             : Manage Azure Network resources.
+    policy              : Manage resource policies.
+    postgres            : Manage Azure Database for PostgreSQL servers.
+    ppg                 : Manage Proximity Placement Groups.
+    provider            : Manage resource providers.
+    redis               : Manage dedicated Redis caches for your Azure applications.
+    relay               : Manage Azure Relay Service namespaces, WCF relays, hybrid connections, and
+                         rules.
+    reservations        : Manage Azure Reservations.
+    resource            : Manage Azure resources.
+    rest                : Invoke a custom request.
+    role                : Manage user roles for access control with Azure Active Directory and
+                         service principals.
+    search              : Manage Azure Search services, admin keys and query keys.
+    security            : Manage your security posture with Azure Security Center.
+    servicebus          : Manage Azure Service Bus namespaces, queues, topics, subscriptions, rules
+                         and geo-disaster recovery configuration alias.
+    sf                  : Manage and administer Azure Service Fabric clusters.
+    sig                 : Manage shared image gallery.
+    signalr             : Manage Azure SignalR Service.
+    snapshot            : Manage point-in-time copies of managed disks, native blobs, or other
+                         snapshots.
+    sql                 : Manage Azure SQL Databases and Data Warehouses.
+    ssh                 : SSH into resources (Azure VMs, etc) using AAD issued openssh certificates.
+    sshkey              : Manage ssh public key with vm.
+    staticwebapp        : Manage static apps.
+    storage             : Manage Azure Cloud Storage resources.
+    synapse             : Manage and operate Synapse Workspace, Spark Pool, SQL Pool.
+    tag                 : Tag Management on a resource.
+    term                : Manage marketplace agreement with marketplaceordering.
+    ts                  : Manage template specs at subscription or resource group scope.
+    upgrade             : Upgrade Azure CLI and extensions.
+    version             : Show the versions of Azure CLI modules and extensions in JSON format by
+                         default or format configured by --output.
+    vm                  : Manage Linux or Windows virtual machines.
+    vmss                : Manage groupings of virtual machines in an Azure Virtual Machine Scale Set
+                         (VMSS).
+    webapp              : Manage web apps.
+abhishek@Azure:~$ az res
+reservations  resource      rest
+abhishek@Azure:~$ az res
+reservations  resource      rest
+abhishek@Azure:~$ az resource
+create         -h             invoke-action  list           move           tag            wait
+delete         --help         link           lock           show           update
+abhishek@Azure:~$ az resource create -
+--api-version             --id                      -n                        --output                  --resource-group
+--debug                   --is-full-object          --name                    -p                        --resource-type
+-g                        -l                        --namespace               --parent                  --subscription
+-h                        --latest-include-preview  -o                        --properties              -v
+--help                    --location                --only-show-errors        --query                   --verbose
+abhishek@Azure:~$ az resource create --namee test_vm -
+--api-version             --id                      -n                        --output                  --resource-group
+--debug                   --is-full-object          --name                    -p                        --resource-type
+-g                        -l                        --namespace               --parent                  --subscription
+-h                        --latest-include-preview  -o                        --properties              -v
+--help                    --location                --only-show-errors        --query                   --verbose
+abhishek@Azure:~$ az resource create --name
+.azure/        .bash_history  .bash_logout   .bashrc        clouddrive/    .profile       .tmux.conf     .vimrc
+abhishek@Azure:~$ az resource create --name test_vm --resource-
+--resource-group  --resource-type
+abhishek@Azure:~$ az resource create --name test_vm --resource-
+--resource-group  --resource-type
+abhishek@Azure:~$ az resource create --name test_vm --resource-group test_vm --resource-type
+Display all 2556 possibilities? (y or n)
+84codes.CloudAMQP/listCommunicationPreference
+84codes.CloudAMQP/operations
+84codes.CloudAMQP/servers
+84codes.CloudAMQP/updateCommunicationPreference
+Crypteron.DataSecurity/apps
+Crypteron.DataSecurity/listCommunicationPreference
+Crypteron.DataSecurity/operations
+Crypteron.DataSecurity/updateCommunicationPreference
+Dynatrace.Observability/locations
+Dynatrace.Observability/locations/operationStatuses
+Dynatrace.Observability/monitors
+Dynatrace.Observability/monitors/tagRules
+Dynatrace.Observability/operations
+Dynatrace.Observability/registeredSubscriptions
+Microsoft.AAD/DomainServices
+Microsoft.AAD/DomainServices/oucontainer
+microsoft.aadiam/azureADMetrics
+microsoft.aadiam/diagnosticSettings
+microsoft.aadiam/diagnosticSettingsCategories
+microsoft.aadiam/operations
+microsoft.aadiam/privateLinkForAzureAD
+microsoft.aadiam/tenants
+Microsoft.AAD/locations
+Microsoft.AAD/locations/operationresults
+Microsoft.AAD/operations
+Microsoft.Addons/operationResults
+Microsoft.Addons/operations
+Microsoft.Addons/supportProviders
+--More--^C
+abhishek@Azure:~$ ^C
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$ ssh abhishek@40.80.92.97
+The authenticity of host '40.80.92.97 (40.80.92.97)' can't be established.
+ECDSA key fingerprint is SHA256:TH2uino9m4OOd8cfbS8lPpXxEsNg2MXAkqxi7uWXENY.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '40.80.92.97' (ECDSA) to the list of known hosts.
+abhishek@40.80.92.97's password:
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.8.0-1039-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug  7 08:56:30 UTC 2021
+
+  System load:  0.01              Processes:             113
+  Usage of /:   4.5% of 28.90GB   Users logged in:       0
+  Memory usage: 52%               IPv4 address for eth0: 10.0.0.4
+  Swap usage:   0%
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+abhishek@testvm:~$ echo "# Azure" >> README.md
+abhishek@testvm:~$ git init
+Initialized empty Git repository in /home/abhishek/.git/
+abhishek@testvm:~$ git add README.md
+abhishek@testvm:~$ git commit -m "first commit"
+[master (root-commit) 5fcb791] first commit
+ Committer: Ubuntu <abhishek@testvm.vqlg3tat0n3exbzwicbit5mwne.rx.internal.cloudapp.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+abhishek@testvm:~$ git branch -M main
+abhishek@testvm:~$ git remote add origin https://github.com/PageBlob/Azure.git
+abhishek@testvm:~$ git push -u origin main
+Username for 'https://github.com': PageBlob
+Password for 'https://PageBlob@github.com':
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 252 bytes | 42.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/PageBlob/Azure.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+abhishek@testvm:~$ cat > linuxScript.sh
+sudo apt-get install nginx
+^C
+abhishek@testvm:~$ history
+    1  echo "# Azure" >> README.md
+    2  git init
+    3  git add README.md
+    4  git commit -m "first commit"
+    5  git branch -M main
+    6  git remote add origin https://github.com/PageBlob/Azure.git
+    7  git push -u origin main
+    8  cat > linuxScript.sh
+    9  history
+abhishek@testvm:~$ git add linuxScript.sh
+abhishek@testvm:~$ git commit -m "linux script"
+[main 5bed7c9] linux script
+ Committer: Ubuntu <abhishek@testvm.vqlg3tat0n3exbzwicbit5mwne.rx.internal.cloudapp.net>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 linuxScript.sh
+abhishek@testvm:~$ git branch -M main
+abhishek@testvm:~$ git remote add origin https://github.com/PageBlob/Azure.git
+fatal: remote origin already exists.
+abhishek@testvm:~$ git push -u origin main
+Username for 'https://github.com': PageBlob
+Password for 'https://PageBlob@github.com':
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 345.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/PageBlob/Azure.git
+   5fcb791..5bed7c9  main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+abhishek@testvm:~$ exit
+logout
+Connection to 40.80.92.97 closed.
+abhishek@Azure:~$ cat > linux.sh
+sudo apt-get install -y nginx
+^C
+abhishek@Azure:~$ git add linux.sh
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+abhishek@Azure:~$ git login
+git: 'login' is not a git command. See 'git --help'.
+
+The most similar command is
+        column
+abhishek@Azure:~$ git 0--help
+git: '0--help' is not a git command. See 'git --help'.
+abhishek@Azure:~$ git --help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+abhishek@Azure:~$ git push
+fatal: not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+abhishek@Azure:~$ cat > customscript.sh
+{
+"fileUris":['https://raw.githubusercontent.com/PageBlob/Azure/main/linuxScript.sh'],
+"commandToExecute":"./linuxScript.sh"
+}
+^C
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions --settings customscript.json
+Failed to parse JSON: customscript.json
+Error detail: Expecting value: line 1 column 1 (char 0)
+The JSON may have been parsed by the shell. See https://docs.microsoft.com/cli/azure/use-cli-effectively#quoting-issues
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions -unrecognized arguments: -
+
+TRY THIS:
+az vm extension set --name customScript --publisher Microsoft.Azure.Extensions --ids {vm_id}
+Add a customScript extension to VM(s) specified by --ids.
+
+az vm extension set --name VMAccessForLinux --publisher Microsoft.OSTCExtensions --version 1.4 --vm-name MyVm --resource-group MyResourceGroup --protected-settings '{"username":"user1", "ssh_key":"ssh_rsa ..."}'
+Add a user account to a Linux VM.
+
+https://docs.microsoft.com/en-US/cli/azure/vm/extension#az_vm_extension_set
+Read more about the command in reference docs
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions
+Failed to find the latest version for the extension "customscript.sh"
+abhishek@Azure:~$ ls
+clouddrive  customscript.sh  linux.sh
+abhishek@Azure:~$ cat customscript.sh
+{
+"fileUris":['https://raw.githubusercontent.com/PageBlob/Azure/main/linuxScript.sh'],
+"commandToExecute":"./linuxScript.sh"
+}
+abhishek@Azure:~$ history
+    1  az
+    2  ssh abhishek@40.80.92.97
+    3  cat > linux.sh
+    4  git add linux.sh
+    5  git login
+    6  git 0--help
+    7  git --help
+    8  git push
+    9  cat > customscript.sh
+   10  az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions --settings customscript.json
+   11  az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions -
+   12  az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions
+   13  ls
+   14  cat customscript.sh
+   15  history
+abhishek@Azure:~$ redo 2
+bash: redo: command not found
+abhishek@Azure:~$ ssh abhishek@40.80.92.97abhishek@40.80.92.97's password:
+Welcome to Ubuntu 20.04.2 LTS (GNU/Linux 5.8.0-1039-azure x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Aug  7 09:15:33 UTC 2021
+
+  System load:  0.0               Processes:             113
+  Usage of /:   4.5% of 28.90GB   Users logged in:       0
+  Memory usage: 52%               IPv4 address for eth0: 10.0.0.4
+  Swap usage:   0%
+
+
+1 update can be applied immediately.
+To see these additional updates run: apt list --upgradable
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Last login: Sat Aug  7 08:56:32 2021 from 23.98.142.113
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+abhishek@testvm:~$ cat > customscript.sh
+{
+"fileUris":['https://raw.githubusercontent.com/PageBlob/Azure/main/linuxScript.sh'],
+"commandToExecute":"./linuxScript.sh"
+}
+^C
+abhishek@testvm:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions
+
+Command 'az' not found, but can be installed with:
+
+sudo apt install azure-cli
+
+abhishek@testvm:~$ sudo apt install azure-cli
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+E: Unable to locate package azure-cli
+abhishek@testvm:~$ exit
+logout
+Connection to 40.80.92.97 closed.
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions
+Failed to find the latest version for the extension "customscript.sh"
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh^C-publisher Microsoft.Azure.Extensions
+abhishek@Azure:~$
+abhishek@Azure:~$
+abhishek@Azure:~$ cp customscript.sh customscript.json
+abhishek@Azure:~$ vi customscript.json
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript.sh --publisher Microsoft.Azure.Extensions  --settings customscript.json
+Failed to find the latest version for the extension "customscript.sh"
+abhishek@Azure:~$ az vm extension set --resource-group test_vm --vm-name testvm --name customscript --publisher Microsoft.Azure.Extensions  --settings customscript.json
+{
+  "autoUpgradeMinorVersion": true,
+  "enableAutomaticUpgrade": null,
+  "forceUpdateTag": null,
+  "id": "/subscriptions/79286a83-eb39-442c-85eb-fb1cd5eec0fe/resourceGroups/test_vm/providers/Microsoft.Compute/virtualMachines/testvm/extensions/customscript",
+  "instanceView": null,
+  "location": "centralindia",
+  "name": "customscript",
+  "protectedSettings": null,
+  "provisioningState": "Succeeded",
+  "publisher": "Microsoft.Azure.Extensions",
+  "resourceGroup": "test_vm",
+  "settings": {
+    "commandToExecute": "./linuxScript.sh",
+    "fileUris": [
+      "https://raw.githubusercontent.com/PageBlob/Azure/main/linuxScript.sh"
+    ]
+  },
+  "tags": null,
+  "type": "Microsoft.Compute/virtualMachines/extensions",
+  "typeHandlerVersion": "2.1",
+  "typePropertiesType": "customscript"
+}
